@@ -1,17 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDom from "react-dom/client";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const Books= [
+    {id:1,author : 'J.k.Rowling',title :`Harry Potter and the Philosopher's Stone`,img : './Assets/book1.jpg',},
+    {id:2,author: "Dandy Smith",title: `The Wrong Daughter`,img: "./Assets/book2.jpg",},
+    {id:3,author: "Shrijeet Sandhilya",title: `can we be strangers again ?`,img: "./Assets/book3.jpg",},
+];
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Booklist = () =>{
+ return (
+   <>
+     <h1 className="titlename">Amazon best Sellers</h1>
+     <section className="booklist">
+       {Books.map((book, index) => {
+         return <Book {...book} key={book.id} number={index} />;
+       })}
+     </section>
+   </>
+ );
+
+};
+
+const Book =(props) =>{
+    const{img,title,author,number} =props;
+    return( 
+    <article className = 'book'>
+    <img src={img} alt ={title}/>
+    <h2>{title}</h2>
+    <h4>{author}</h4>
+    <span className='number'>{number + 1}</span>
+   </article>
+    );
+};
+
+
+
+const root = ReactDom.createRoot(document.getElementById("root"));
+
+root.render(<Booklist/>);
