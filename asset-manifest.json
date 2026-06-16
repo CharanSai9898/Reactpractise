@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/CharanSai9898/Reactpractise.git/static/css/main.9481f86c.css",
-    "main.js": "/CharanSai9898/Reactpractise.git/static/js/main.82aaf9ae.js",
-    "index.html": "/CharanSai9898/Reactpractise.git/index.html",
-    "main.9481f86c.css.map": "/CharanSai9898/Reactpractise.git/static/css/main.9481f86c.css.map",
-    "main.82aaf9ae.js.map": "/CharanSai9898/Reactpractise.git/static/js/main.82aaf9ae.js.map"
+    "main.css": "/Reactpractise/static/css/main.9481f86c.css",
+    "main.js": "/Reactpractise/static/js/main.82aaf9ae.js",
+    "index.html": "/Reactpractise/index.html",
+    "main.9481f86c.css.map": "/Reactpractise/static/css/main.9481f86c.css.map",
+    "main.82aaf9ae.js.map": "/Reactpractise/static/js/main.82aaf9ae.js.map"
   },
   "entrypoints": [
     "static/css/main.9481f86c.css",
